@@ -1,6 +1,7 @@
 import openai
 import streamlit as st
 from streamlit_chat import message
+import os
 
 # Setting page title and header
 st.set_page_config(page_title="Book Reader AI Helper",
@@ -8,7 +9,7 @@ st.set_page_config(page_title="Book Reader AI Helper",
 st.markdown("<h1 style='text-align: center;'>A friendly assistant to use Book Reader program.</h1>",
             unsafe_allow_html=True)
 
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAIAPI")
 
 # Initialise session state variables
 if 'generated' not in st.session_state:
