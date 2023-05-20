@@ -31,7 +31,7 @@ def main():
         'Download Book Reader', './Book-reader.rar', 'Book-reader.rar')
 
     st.subheader(
-        "Need help? use our [AI Book Reader assistant🤖](https://book-reader.streamlit.app/🤖AI_Assistant)")
+        "Need help? use our [AI Book Reader assistant🤖](https://book-reader.streamlit.app/AI_Assistant)")
 
     st.header("Contact")
     st.markdown(
