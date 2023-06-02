@@ -27,8 +27,9 @@ def main():
         st.markdown(f"- {feature}")
 
     st.header("Try the Book Reader App")
-    st.download_button(
-        'Download Book Reader', './Book-reader.rar', 'Book-reader.rar')
+    with open('./Book-reader.rar', 'rb') as file:
+        st.download_button(
+            'Download Book-Reader.rar 👨‍🎓📚', file, 'Book-reader.rar')
 
     st.subheader(
         "Need help? use our [AI Book Reader assistant🤖](https://book-reader.streamlit.app/AI_Assistant)")
